@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="librcsc-4.1.0_0.00" root=".">
+      <df name="config">
+      </df>
+      <df name="example">
+        <in>gzifstream_main.cpp</in>
+        <in>gzofstream_main.cpp</in>
+        <in>loader_main.cpp</in>
+        <in>param_main.cpp</in>
+        <in>result_writer.cpp</in>
+        <in>result_writer.h</in>
+        <in>result_writer_main.cpp</in>
+      </df>
+      <df name="m4">
+      </df>
+      <df name="rcsc">
+        <df name="action">
+          <in>arm_off.h</in>
+          <in>arm_point_to_point.h</in>
+          <in>basic_actions.cpp</in>
+          <in>basic_actions.h</in>
+          <in>bhv_before_kick_off.cpp</in>
+          <in>bhv_before_kick_off.h</in>
+          <in>bhv_body_neck_to_ball.h</in>
+          <in>bhv_body_neck_to_point.h</in>
+          <in>bhv_emergency.cpp</in>
+          <in>bhv_emergency.h</in>
+          <in>bhv_go_to_point_look_ball.cpp</in>
+          <in>bhv_go_to_point_look_ball.h</in>
+          <in>bhv_neck_body_to_ball.h</in>
+          <in>bhv_neck_body_to_point.h</in>
+          <in>bhv_scan_field.cpp</in>
+          <in>bhv_scan_field.h</in>
+          <in>bhv_shoot.h</in>
+          <in>bhv_shoot2008.cpp</in>
+          <in>bhv_shoot2008.h</in>
+          <in>body_advance_ball.h</in>
+          <in>body_advance_ball2009.cpp</in>
+          <in>body_advance_ball2009.h</in>
+          <in>body_clear_ball.h</in>
+          <in>body_clear_ball2009.cpp</in>
+          <in>body_clear_ball2009.h</in>
+          <in>body_dribble.h</in>
+          <in>body_dribble2008.cpp</in>
+          <in>body_dribble2008.h</in>
+          <in>body_go_to_point.h</in>
+          <in>body_go_to_point2009.cpp</in>
+          <in>body_go_to_point2009.h</in>
+          <in>body_go_to_point2010.cpp</in>
+          <in>body_go_to_point2010.h</in>
+          <in>body_go_to_point_dodge.cpp</in>
+          <in>body_go_to_point_dodge.h</in>
+          <in>body_hold_ball.h</in>
+          <in>body_hold_ball2008.cpp</in>
+          <in>body_hold_ball2008.h</in>
+          <in>body_intercept.h</in>
+          <in>body_intercept2009.cpp</in>
+          <in>body_intercept2009.h</in>
+          <in>body_kick_collide_with_ball.cpp</in>
+          <in>body_kick_collide_with_ball.h</in>
+          <in>body_kick_one_step.cpp</in>
+          <in>body_kick_one_step.h</in>
+          <in>body_kick_to_relative.cpp</in>
+          <in>body_kick_to_relative.h</in>
+          <in>body_pass.cpp</in>
+          <in>body_pass.h</in>
+          <in>body_smart_kick.cpp</in>
+          <in>body_smart_kick.h</in>
+          <in>body_stop_ball.cpp</in>
+          <in>body_stop_ball.h</in>
+          <in>body_stop_dash.cpp</in>
+          <in>body_stop_dash.h</in>
+          <in>body_tackle_to_point.h</in>
+          <in>body_turn_to_angle.h</in>
+          <in>body_turn_to_ball.h</in>
+          <in>body_turn_to_point.h</in>
+          <in>intention_dribble2008.cpp</in>
+          <in>intention_dribble2008.h</in>
+          <in>intention_time_limit_action.cpp</in>
+          <in>intention_time_limit_action.h</in>
+          <in>kick_table.cpp</in>
+          <in>kick_table.h</in>
+          <in>neck_scan_field.cpp</in>
+          <in>neck_scan_field.h</in>
+          <in>neck_scan_players.cpp</in>
+          <in>neck_scan_players.h</in>
+          <in>neck_turn_to_ball.h</in>
+          <in>neck_turn_to_ball_and_player.cpp</in>
+          <in>neck_turn_to_ball_and_player.h</in>
+          <in>neck_turn_to_ball_or_scan.cpp</in>
+          <in>neck_turn_to_ball_or_scan.h</in>
+          <in>neck_turn_to_goalie_or_scan.cpp</in>
+          <in>neck_turn_to_goalie_or_scan.h</in>
+          <in>neck_turn_to_low_conf_teammate.cpp</in>
+          <in>neck_turn_to_low_conf_teammate.h</in>
+          <in>neck_turn_to_player_or_scan.cpp</in>
+          <in>neck_turn_to_player_or_scan.h</in>
+          <in>neck_turn_to_point.h</in>
+          <in>neck_turn_to_relative.h</in>
+          <in>shoot_table2008.cpp</in>
+          <in>shoot_table2008.h</in>
+          <in>view_change_width.h</in>
+          <in>view_normal.h</in>
+          <in>view_synch.cpp</in>
+          <in>view_synch.h</in>
+          <in>view_wide.h</in>
+        </df>
+        <df name="ann">
+          <in>bpn1.h</in>
+          <in>ngnet.cpp</in>
+          <in>ngnet.h</in>
+          <in>rbf.cpp</in>
+          <in>rbf.h</in>
+        </df>
+        <df name="coach">
+          <in>coach_agent.cpp</in>
+          <in>coach_agent.h</in>
+          <in>coach_audio_sensor.cpp</in>
+          <in>coach_audio_sensor.h</in>
+          <in>coach_command.cpp</in>
+          <in>coach_command.h</in>
+          <in>coach_config.cpp</in>
+          <in>coach_config.h</in>
+          <in>coach_debug_client.cpp</in>
+          <in>coach_debug_client.h</in>
+          <in>global_object.cpp</in>
+          <in>global_object.h</in>
+          <in>global_visual_sensor.cpp</in>
+          <in>global_visual_sensor.h</in>
+          <in>global_world_model.cpp</in>
+          <in>global_world_model.h</in>
+          <in>player_type_analyzer.cpp</in>
+          <in>player_type_analyzer.h</in>
+        </df>
+        <df name="common">
+          <in>audio_codec.cpp</in>
+          <in>audio_codec.h</in>
+          <in>audio_memory.cpp</in>
+          <in>audio_memory.h</in>
+          <in>audio_message.h</in>
+          <in>basic_client.cpp</in>
+          <in>basic_client.h</in>
+          <in>free_message_parser.h</in>
+          <in>logger.cpp</in>
+          <in>logger.h</in>
+          <in>periodic_callback.h</in>
+          <in>player_param.cpp</in>
+          <in>player_param.h</in>
+          <in>player_type.cpp</in>
+          <in>player_type.h</in>
+          <in>say_message_parser.cpp</in>
+          <in>say_message_parser.h</in>
+          <in>server_param.cpp</in>
+          <in>server_param.h</in>
+          <in>soccer_agent.cpp</in>
+          <in>soccer_agent.h</in>
+          <in>stamina_model.cpp</in>
+          <in>stamina_model.h</in>
+          <in>team_graphic.cpp</in>
+          <in>team_graphic.h</in>
+        </df>
+        <df name="formation">
+          <in>formation.cpp</in>
+          <in>formation.h</in>
+          <in>formation_bpn.cpp</in>
+          <in>formation_bpn.h</in>
+          <in>formation_cdt.cpp</in>
+          <in>formation_cdt.h</in>
+          <in>formation_dt.cpp</in>
+          <in>formation_dt.h</in>
+          <in>formation_knn.cpp</in>
+          <in>formation_knn.h</in>
+          <in>formation_ngnet.cpp</in>
+          <in>formation_ngnet.h</in>
+          <in>formation_rbf.cpp</in>
+          <in>formation_rbf.h</in>
+          <in>formation_sbsp.cpp</in>
+          <in>formation_sbsp.h</in>
+          <in>formation_static.cpp</in>
+          <in>formation_static.h</in>
+          <in>formation_uva.cpp</in>
+          <in>formation_uva.h</in>
+          <in>sample_data.cpp</in>
+          <in>sample_data.h</in>
+        </df>
+        <df name="geom">
+          <df name="triangle">
+            <in>showme.c</in>
+            <in>triangle.c</in>
+            <in>triangle.h</in>
+            <in>tricall.c</in>
+          </df>
+          <in>angle_deg.cpp</in>
+          <in>angle_deg.h</in>
+          <in>circle_2d.cpp</in>
+          <in>circle_2d.h</in>
+          <in>composite_region_2d.cpp</in>
+          <in>composite_region_2d.h</in>
+          <in>convex_hull.cpp</in>
+          <in>convex_hull.h</in>
+          <in>delaunay_triangulation.cpp</in>
+          <in>delaunay_triangulation.h</in>
+          <in>line_2d.cpp</in>
+          <in>line_2d.h</in>
+          <in>matrix_2d.cpp</in>
+          <in>matrix_2d.h</in>
+          <in>polygon_2d.cpp</in>
+          <in>polygon_2d.h</in>
+          <in>ray_2d.cpp</in>
+          <in>ray_2d.h</in>
+          <in>rect_2d.cpp</in>
+          <in>rect_2d.h</in>
+          <in>region_2d.h</in>
+          <in>sector_2d.cpp</in>
+          <in>sector_2d.h</in>
+          <in>segment_2d.cpp</in>
+          <in>segment_2d.h</in>
+          <in>size_2d.h</in>
+          <in>test_convex_hull.cpp</in>
+          <in>test_matrix_2d.cpp</in>
+          <in>test_polygon_2d.cpp</in>
+          <in>test_rect_2d.cpp</in>
+          <in>test_rundom_convex_hull.cpp</in>
+          <in>test_segment_2d.cpp</in>
+          <in>test_triangle_2d.cpp</in>
+          <in>test_vector_2d.cpp</in>
+          <in>test_voronoi_diagram.cpp</in>
+          <in>triangle_2d.cpp</in>
+          <in>triangle_2d.h</in>
+          <in>triangulation.cpp</in>
+          <in>triangulation.h</in>
+          <in>vector_2d.cpp</in>
+          <in>vector_2d.h</in>
+          <in>voronoi_diagram.h</in>
+          <in>voronoi_diagram_original.cpp</in>
+          <in>voronoi_diagram_original.h</in>
+          <in>voronoi_diagram_triangle.cpp</in>
+          <in>voronoi_diagram_triangle.h</in>
+        </df>
+        <df name="gz">
+          <in>gzcompressor.cpp</in>
+          <in>gzcompressor.h</in>
+          <in>gzfilterstream.cpp</in>
+          <in>gzfilterstream.h</in>
+          <in>gzfstream.cpp</in>
+          <in>gzfstream.h</in>
+        </df>
+        <df name="monitor">
+          <in>monitor_command.cpp</in>
+          <in>monitor_command.h</in>
+        </df>
+        <df name="net">
+          <in>basic_socket.cpp</in>
+          <in>basic_socket.h</in>
+          <in>tcp_socket.cpp</in>
+          <in>tcp_socket.h</in>
+          <in>udp_socket.cpp</in>
+          <in>udp_socket.h</in>
+        </df>
+        <df name="param">
+          <in>cmd_line_parser.cpp</in>
+          <in>cmd_line_parser.h</in>
+          <in>conf_file_parser.cpp</in>
+          <in>conf_file_parser.h</in>
+          <in>param_map.cpp</in>
+          <in>param_map.h</in>
+          <in>param_parser.h</in>
+          <in>rcss_param_parser.cpp</in>
+          <in>rcss_param_parser.h</in>
+        </df>
+        <df name="player">
+          <in>abstract_player_object.cpp</in>
+          <in>abstract_player_object.h</in>
+          <in>action_effector.cpp</in>
+          <in>action_effector.h</in>
+          <in>audio_sensor.cpp</in>
+          <in>audio_sensor.h</in>
+          <in>ball_object.cpp</in>
+          <in>ball_object.h</in>
+          <in>body_sensor.cpp</in>
+          <in>body_sensor.h</in>
+          <in>debug_client.cpp</in>
+          <in>debug_client.h</in>
+          <in>free_message.h</in>
+          <in>freeform_parser.cpp</in>
+          <in>freeform_parser.h</in>
+          <in>fullstate_sensor.cpp</in>
+          <in>fullstate_sensor.h</in>
+          <in>intercept_table.cpp</in>
+          <in>intercept_table.h</in>
+          <in>localization.h</in>
+          <in>localization_default.cpp</in>
+          <in>localization_default.h</in>
+          <in>localization_pfilter.cpp</in>
+          <in>localization_pfilter.h</in>
+          <in>object_table.cpp</in>
+          <in>object_table.h</in>
+          <in>penalty_kick_state.cpp</in>
+          <in>penalty_kick_state.h</in>
+          <in>player_agent.cpp</in>
+          <in>player_agent.h</in>
+          <in>player_command.cpp</in>
+          <in>player_command.h</in>
+          <in>player_config.cpp</in>
+          <in>player_config.h</in>
+          <in>player_evaluator.h</in>
+          <in>player_intercept.cpp</in>
+          <in>player_intercept.h</in>
+          <in>player_object.cpp</in>
+          <in>player_object.h</in>
+          <in>player_predicate.h</in>
+          <in>say_message_builder.cpp</in>
+          <in>say_message_builder.h</in>
+          <in>see_state.cpp</in>
+          <in>see_state.h</in>
+          <in>self_intercept_v13.cpp</in>
+          <in>self_intercept_v13.h</in>
+          <in>self_object.cpp</in>
+          <in>self_object.h</in>
+          <in>soccer_action.cpp</in>
+          <in>soccer_action.h</in>
+          <in>soccer_intention.h</in>
+          <in>view_area.h</in>
+          <in>view_grid_map.cpp</in>
+          <in>view_grid_map.h</in>
+          <in>view_mode.cpp</in>
+          <in>view_mode.h</in>
+          <in>visual_sensor.cpp</in>
+          <in>visual_sensor.h</in>
+          <in>world_model.cpp</in>
+          <in>world_model.h</in>
+        </df>
+        <df name="rcg">
+          <in>handler.h</in>
+          <in>holder.cpp</in>
+          <in>holder.h</in>
+          <in>parser.cpp</in>
+          <in>parser.h</in>
+          <in>parser_v1.cpp</in>
+          <in>parser_v1.h</in>
+          <in>parser_v2.cpp</in>
+          <in>parser_v2.h</in>
+          <in>parser_v3.cpp</in>
+          <in>parser_v3.h</in>
+          <in>parser_v4.cpp</in>
+          <in>parser_v4.h</in>
+          <in>parser_v5.cpp</in>
+          <in>parser_v5.h</in>
+          <in>reader.h</in>
+          <in>serializer.cpp</in>
+          <in>serializer.h</in>
+          <in>serializer_v1.cpp</in>
+          <in>serializer_v1.h</in>
+          <in>serializer_v2.cpp</in>
+          <in>serializer_v2.h</in>
+          <in>serializer_v3.cpp</in>
+          <in>serializer_v3.h</in>
+          <in>serializer_v4.cpp</in>
+          <in>serializer_v4.h</in>
+          <in>serializer_v5.cpp</in>
+          <in>serializer_v5.h</in>
+          <in>types.h</in>
+          <in>util.cpp</in>
+          <in>util.h</in>
+        </df>
+        <df name="time">
+          <in>timer.cpp</in>
+          <in>timer.h</in>
+        </df>
+        <df name="trainer">
+          <in>trainer_agent.cpp</in>
+          <in>trainer_agent.h</in>
+          <in>trainer_command.cpp</in>
+          <in>trainer_command.h</in>
+          <in>trainer_config.cpp</in>
+          <in>trainer_config.h</in>
+        </df>
+        <df name="util">
+          <in>game_mode.cpp</in>
+          <in>soccer_math.cpp</in>
+          <in>version.cpp</in>
+        </df>
+        <in>factory.h</in>
+        <in>game_mode.h</in>
+        <in>game_time.h</in>
+        <in>geom.h</in>
+        <in>gz.h</in>
+        <in>math_util.h</in>
+        <in>random.h</in>
+        <in>rcg.h</in>
+        <in>soccer_math.h</in>
+        <in>timer.h</in>
+        <in>types.h</in>
+        <in>version.h</in>
+      </df>
+      <df name="src">
+        <in>rcg2txt.cpp</in>
+        <in>rcgrenameteam.cpp</in>
+        <in>rcgreverse.cpp</in>
+        <in>rcgverconv.cpp</in>
+        <in>rcgversion.cpp</in>
+        <in>resultprinter.cpp</in>
+        <in>scheduler.cpp</in>
+        <in>tableprinter.cpp</in>
+      </df>
+      <in>config.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>configure</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>rcsc/geom/triangle</pElem>
+              <pElem>/usr/include</pElem>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>CDT_ONLY</Elem>
+              <Elem>HAVE_CONFIG_H</Elem>
+              <Elem>PIC</Elem>
+              <Elem>REAL=double</Elem>
+              <Elem>REDUCED</Elem>
+              <Elem>TRILIBRARY</Elem>
+              <Elem>VOID=int</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/include</pElem>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="example/gzifstream_main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="example/gzofstream_main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="example/loader_main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="example/param_main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="example/result_writer.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="example/result_writer.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="example/result_writer_main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <folder path="librcsc-4.1.0_0.00/rcsc">
+        <ccTool>
+          <preprocessorList>
+            <Elem>PIC</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/action">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/action</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/ann">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/ann</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/coach">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/coach</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/common">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/common</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/formation">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/formation</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/geom">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/geom</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/gz">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/gz</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/monitor">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/monitor</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/net">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/net</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/param">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/param</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/player">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/player</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/rcg">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/rcg</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/time">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/time</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/trainer">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/trainer</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/rcsc/util">
+        <ccTool>
+          <incDir>
+            <pElem>rcsc/util</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="librcsc-4.1.0_0.00/src">
+        <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="rcsc/action/bhv_shoot.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/action/body_advance_ball.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/action/body_clear_ball.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/action/body_dribble.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/common/free_message_parser.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/geom.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_convex_hull.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_matrix_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_polygon_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_rect_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_rundom_convex_hull.cpp"
+            ex="true"
+            tool="1"
+            flavor="0">
+      </item>
+      <item path="rcsc/geom/test_segment_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_triangle_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_vector_2d.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/test_voronoi_diagram.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="rcsc/geom/triangle/showme.c" ex="true" tool="0" flavor="0">
+      </item>
+      <item path="rcsc/geom/triangle/tricall.c" ex="true" tool="0" flavor="0">
+      </item>
+      <item path="rcsc/geom/voronoi_diagram.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="rcsc/player/free_message.h" ex="true" tool="3" flavor="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

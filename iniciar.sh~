@@ -1,0 +1,1 @@
+nohup java -jar ~/NetBeansProjects/robocupMonitor/dist/robocupMonitor.jar "/home/vinicius/rcss/rodar.sh" "/home/vinicius/rcss/iBots_0.00/logs/" ""

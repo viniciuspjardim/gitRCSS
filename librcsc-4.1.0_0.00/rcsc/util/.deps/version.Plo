@@ -1,0 +1,5 @@
+version.lo: version.cpp ../../config.h ../../rcsc/version.h
+
+../../config.h:
+
+../../rcsc/version.h:
