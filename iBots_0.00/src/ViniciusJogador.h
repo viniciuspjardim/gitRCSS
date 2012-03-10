@@ -105,7 +105,7 @@ public:
     void fazerLog() {
         int unum = mundo.self().unum();
         std::stringstream stream;
-        stream << "/home/vinicius/rcss/iBots_0.00/logs/" << unum << ".txt";
+        stream << "/home/vinicius/gitRCSS/iBots_0.00/logs/" << unum << ".txt";
         const char* arq;
         arq = stream.str().c_str();
         

@@ -87,7 +87,7 @@ public:
     
     void logPosseBola() {
         std::stringstream stream;
-        stream << "/home/vinicius/rcss/iBots_0.00/logs/coach.txt";
+        stream << "/home/vinicius/gitRCSS/iBots_0.00/logs/coach.txt";
         const char* arq;
         arq = stream.str().c_str();
         
