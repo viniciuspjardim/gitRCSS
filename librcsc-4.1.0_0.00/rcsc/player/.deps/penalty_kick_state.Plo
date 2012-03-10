@@ -16,8 +16,8 @@ penalty_kick_state.lo: penalty_kick_state.cpp ../../config.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/exception \
- /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
  /usr/include/c++/4.6/bits/exception_defines.h \
@@ -49,6 +49,7 @@ penalty_kick_state.lo: penalty_kick_state.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/allocator.h \
@@ -128,6 +129,8 @@ penalty_kick_state.h:
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h:
 
 /usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/4.6/exception:
 
@@ -214,6 +217,8 @@ penalty_kick_state.h:
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 

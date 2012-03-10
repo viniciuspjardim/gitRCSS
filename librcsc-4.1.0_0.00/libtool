@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (librcsc) 4.1.0
-# Libtool was configured on host VINI-PC-UBUNTU:
+# Libtool was configured on host vinicius-hp-linux:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -129,16 +129,16 @@ old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$oldlib"
 old_postuninstall_cmds=""
 
 # A C compiler.
-LTCC="/usr/bin/gcc"
+LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-g3 -gdwarf-2"
+LTCFLAGS="-g -O2"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
-global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p'"
+global_symbol_pipe=""
 
 # Transform the output of nm in a proper C declaration.
-global_symbol_to_cdecl="sed -n -e 's/^T .* \\(.*\\)\$/extern int \\1();/p' -e 's/^[ABCDGIRSTW]* .* \\(.*\\)\$/extern char \\1;/p'"
+global_symbol_to_cdecl=""
 
 # Transform the output of nm in a C name address pair.
 global_symbol_to_c_name_address="sed -n -e 's/^: \\([^ ]*\\) \$/  {\\\"\\1\\\", (void *) 0},/p' -e 's/^[ABCDGIRSTW]* \\([^ ]*\\) \\([^ ]*\\)\$/  {\"\\2\", (void *) \\&\\2},/p'"
@@ -237,7 +237,7 @@ hardcode_into_libs=yes
 sys_lib_search_path_spec="/usr/lib/gcc/x86_64-linux-gnu/4.6.1 /usr/lib/x86_64-linux-gnu /usr/lib /lib/x86_64-linux-gnu /lib"
 
 # Run-time system search path for libraries.
-sys_lib_dlsearch_path_spec="/lib /usr/lib /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/local/lib /usr/lib/nvidia-settings /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/nvidia-173 /usr/lib32/nvidia-173 "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/mesa "
 
 # Whether dlopen is supported.
 dlopen_support=unknown
@@ -254,13 +254,13 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/usr/bin/ld"
 
 # Commands used to build an old-style archive.
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
 
 # A language specific compiler.
-CC="/usr/bin/gcc"
+CC="gcc"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -8916,13 +8916,13 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/usr/bin/ld"
 
 # Commands used to build an old-style archive.
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$oldlib"
 
 # A language specific compiler.
-CC="/usr/bin/g++"
+CC="g++"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes

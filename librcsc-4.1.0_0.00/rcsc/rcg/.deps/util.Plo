@@ -27,6 +27,7 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/asm-generic/socket.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h ../../rcsc/rcg/types.h \
  ../../rcsc/types.h /usr/include/boost/cstdint.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -45,12 +46,14 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/boost/config/select_platform_config.hpp \
  /usr/include/boost/config/platform/linux.hpp \
  /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/xlocale.h \
- /usr/include/alloca.h /usr/include/boost/config/posix_features.hpp \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed/syslimits.h \
@@ -74,6 +77,7 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/c++/4.6/debug/debug.h /usr/include/c++/4.6/bits/postypes.h \
  /usr/include/c++/4.6/cwchar /usr/include/wchar.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/4.6/bits/allocator.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h \
  /usr/include/c++/4.6/ext/new_allocator.h /usr/include/c++/4.6/new \
@@ -103,7 +107,8 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/inf.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h
 
 ../../config.h:
 
@@ -173,6 +178,8 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
 
 /usr/include/asm-generic/sockios.h:
 
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
 ../../rcsc/rcg/types.h:
@@ -223,6 +230,8 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/boost/config/select_platform_config.hpp:
 
 /usr/include/boost/config/platform/linux.hpp:
@@ -238,6 +247,8 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
 /usr/include/xlocale.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 
@@ -296,6 +307,8 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
 /usr/include/stdio.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/4.6/bits/allocator.h:
 
@@ -372,3 +385,5 @@ util.lo: util.cpp ../../config.h /usr/include/netinet/in.h \
 /usr/include/x86_64-linux-gnu/bits/mathdef.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:

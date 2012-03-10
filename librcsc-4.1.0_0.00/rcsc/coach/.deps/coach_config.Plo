@@ -26,7 +26,8 @@ coach_config.lo: coach_config.cpp ../../config.h coach_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/bits/allocator.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/bits/allocator.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h \
  /usr/include/c++/4.6/ext/new_allocator.h /usr/include/c++/4.6/new \
  /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/localefwd.h \
@@ -55,6 +56,7 @@ coach_config.lo: coach_config.cpp ../../config.h coach_config.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/initializer_list \
  /usr/include/c++/4.6/bits/basic_string.tcc ../../rcsc/param/param_map.h \
@@ -78,6 +80,7 @@ coach_config.lo: coach_config.cpp ../../config.h coach_config.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/include/boost/config/no_tr1/memory.hpp /usr/include/c++/4.6/memory \
@@ -336,6 +339,8 @@ coach_config.h:
 
 /usr/include/xlocale.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/4.6/bits/allocator.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h:
@@ -414,6 +419,8 @@ coach_config.h:
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
 /usr/include/c++/4.6/initializer_list:
@@ -469,6 +476,8 @@ coach_config.h:
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 

@@ -19,8 +19,8 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/exception \
- /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
  /usr/include/c++/4.6/bits/exception_defines.h \
@@ -52,6 +52,7 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/allocator.h \
@@ -81,7 +82,8 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/include/x86_64-linux-gnu/bits/inf.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h ../../rcsc/rcg/types.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h ../../rcsc/rcg/types.h \
  ../../rcsc/types.h /usr/include/boost/cstdint.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/select_compiler_config.hpp \
@@ -101,6 +103,7 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdint.h \
@@ -151,6 +154,8 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/include/c++/4.6/cstdio /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/basic_file.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++io.h \
  /usr/include/c++/4.6/bits/fstream.tcc ../../rcsc/coach/coach_config.h \
@@ -301,7 +306,8 @@ coach_agent.lo: coach_agent.cpp ../../config.h coach_agent.h \
  /usr/include/c++/4.6/sstream /usr/include/c++/4.6/bits/sstream.tcc \
  /usr/include/c++/4.6/cassert ../../rcsc/param/conf_file_parser.h \
  ../../rcsc/param/param_parser.h ../../rcsc/param/cmd_line_parser.h \
- ../../rcsc/version.h /usr/include/c++/4.6/cstring /usr/include/string.h
+ ../../rcsc/version.h /usr/include/c++/4.6/cstring /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h
 
 ../../config.h:
 
@@ -366,6 +372,8 @@ coach_agent.h:
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h:
 
 /usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/4.6/exception:
 
@@ -453,6 +461,8 @@ coach_agent.h:
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
 /usr/include/c++/4.6/bits/locale_classes.h:
@@ -527,6 +537,8 @@ coach_agent.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 ../../rcsc/rcg/types.h:
 
 ../../rcsc/types.h:
@@ -576,6 +588,8 @@ coach_agent.h:
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 
@@ -716,6 +730,10 @@ coach_agent.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/basic_file.h:
 
@@ -1068,3 +1086,5 @@ global_world_model.h:
 /usr/include/c++/4.6/cstring:
 
 /usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:

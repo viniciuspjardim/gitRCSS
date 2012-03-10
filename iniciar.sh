@@ -1,1 +1,1 @@
-nohup java -jar ~/gitRCSS/robocupMonitor/dist/robocupMonitor.jar "/home/vinicius/rcss/rodar.sh" "/home/vinicius/rcss/iBots_0.00/logs/" ""
+nohup java -jar ~/gitRCSS/robocupMonitor/dist/robocupMonitor.jar "/home/vinicius/gitRCSS/rodar.sh" "/home/vinicius/gitRCSS/iBots_0.00/logs/" ""

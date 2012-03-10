@@ -27,6 +27,7 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/asm-generic/socket.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h parser_v3.h \
  ../../rcsc/rcg/parser.h ../../rcsc/factory.h /usr/include/c++/4.6/map \
  /usr/include/c++/4.6/bits/stl_tree.h \
@@ -65,7 +66,8 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/c++/4.6/bits/postypes.h /usr/include/c++/4.6/cwchar \
  /usr/include/wchar.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/localefwd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
  /usr/include/c++/4.6/clocale /usr/include/locale.h \
@@ -80,6 +82,7 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/ostream_insert.h \
@@ -101,7 +104,8 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/cstring \
- /usr/include/string.h /usr/include/boost/shared_ptr.hpp \
+ /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string3.h \
+ /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/select_compiler_config.hpp \
@@ -116,6 +120,7 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
  /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/include/boost/config/no_tr1/memory.hpp \
@@ -221,6 +226,8 @@ parser_v3.lo: parser_v3.cpp ../../config.h /usr/include/netinet/in.h \
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/asm-generic/sockios.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
@@ -330,6 +337,8 @@ parser_v3.h:
 
 /usr/include/xlocale.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/4.6/bits/char_traits.h:
 
 /usr/include/c++/4.6/bits/localefwd.h:
@@ -371,6 +380,8 @@ parser_v3.h:
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
@@ -428,6 +439,8 @@ parser_v3.h:
 
 /usr/include/string.h:
 
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
 /usr/include/boost/shared_ptr.hpp:
 
 /usr/include/boost/smart_ptr/shared_ptr.hpp:
@@ -465,6 +478,8 @@ parser_v3.h:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 

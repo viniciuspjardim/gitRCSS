@@ -17,8 +17,8 @@ localization_pfilter.lo: localization_pfilter.cpp ../../config.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/exception \
- /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
  /usr/include/c++/4.6/bits/exception_defines.h \
@@ -50,6 +50,7 @@ localization_pfilter.lo: localization_pfilter.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/allocator.h \
@@ -93,6 +94,7 @@ localization_pfilter.lo: localization_pfilter.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/include/boost/scoped_ptr.hpp \
  /usr/include/boost/smart_ptr/scoped_ptr.hpp \
  /usr/include/boost/assert.hpp /usr/include/assert.h \
@@ -104,6 +106,7 @@ localization_pfilter.lo: localization_pfilter.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/current_function.hpp \
  /usr/include/boost/checked_delete.hpp \
  /usr/include/boost/detail/workaround.hpp /usr/include/boost/config.hpp \
@@ -131,7 +134,9 @@ localization_pfilter.lo: localization_pfilter.cpp ../../config.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/c++/4.6/cstdio /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h ../../rcsc/time/timer.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h ../../rcsc/time/timer.h \
  ../../rcsc/random.h /usr/include/boost/random.hpp \
  /usr/include/boost/random/linear_congruential.hpp \
  /usr/include/c++/4.6/cassert /usr/include/c++/4.6/stdexcept \
@@ -349,6 +354,8 @@ localization_pfilter.h:
 
 /usr/include/xlocale.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/4.6/exception:
 
 /usr/include/c++/4.6/bits/char_traits.h:
@@ -434,6 +441,8 @@ localization_pfilter.h:
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
@@ -547,6 +556,8 @@ localization_pfilter.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 /usr/include/boost/scoped_ptr.hpp:
 
 /usr/include/boost/smart_ptr/scoped_ptr.hpp:
@@ -574,6 +585,8 @@ localization_pfilter.h:
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/current_function.hpp:
 
@@ -654,6 +667,10 @@ object_table.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../../rcsc/time/timer.h:
 

@@ -26,6 +26,7 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/boost/config/select_platform_config.hpp \
  /usr/include/boost/config/platform/linux.hpp \
  /usr/include/c++/4.6/cstdlib /usr/include/stdlib.h \
@@ -40,6 +41,7 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/include/boost/config/no_tr1/memory.hpp /usr/include/c++/4.6/memory \
@@ -67,6 +69,7 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/wchar.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/localefwd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
@@ -132,7 +135,8 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/x86_64-linux-gnu/bits/inf.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h body_stop_ball.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h body_stop_ball.h \
  ../../rcsc/player/player_agent.h ../../rcsc/player/world_model.h \
  ../../rcsc/player/self_object.h \
  ../../rcsc/player/abstract_player_object.h \
@@ -165,6 +169,8 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/c++/4.6/cstdio /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/basic_file.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++io.h \
  /usr/include/c++/4.6/bits/fstream.tcc ../../rcsc/player/player_config.h \
@@ -315,6 +321,7 @@ body_kick_to_relative.lo: body_kick_to_relative.cpp ../../config.h \
  /usr/include/boost/function_equal.hpp \
  /usr/include/boost/function/function_fwd.hpp \
  /usr/include/c++/4.6/cstring /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h \
  /usr/include/boost/mem_fn.hpp /usr/include/boost/bind/mem_fn.hpp \
  /usr/include/boost/get_pointer.hpp \
  /usr/include/boost/bind/mem_fn_template.hpp \
@@ -405,6 +412,8 @@ body_kick_to_relative.h:
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/boost/config/select_platform_config.hpp:
 
 /usr/include/boost/config/platform/linux.hpp:
@@ -442,6 +451,8 @@ body_kick_to_relative.h:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 
@@ -516,6 +527,8 @@ body_kick_to_relative.h:
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/4.6/bits/char_traits.h:
 
@@ -673,6 +686,8 @@ body_kick_to_relative.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 body_stop_ball.h:
 
 ../../rcsc/player/player_agent.h:
@@ -788,6 +803,10 @@ body_stop_ball.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/basic_file.h:
 
@@ -1118,6 +1137,8 @@ body_stop_ball.h:
 /usr/include/c++/4.6/cstring:
 
 /usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
 
 /usr/include/boost/mem_fn.hpp:
 

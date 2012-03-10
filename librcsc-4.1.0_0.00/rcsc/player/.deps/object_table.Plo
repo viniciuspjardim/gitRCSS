@@ -18,8 +18,8 @@ object_table.lo: object_table.cpp ../../config.h object_table.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/exception \
- /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/stl_algobase.h \
  /usr/include/c++/4.6/bits/functexcept.h \
  /usr/include/c++/4.6/bits/exception_defines.h \
@@ -51,6 +51,7 @@ object_table.lo: object_table.cpp ../../config.h object_table.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/allocator.h \
@@ -80,7 +81,8 @@ object_table.lo: object_table.cpp ../../config.h object_table.h \
  /usr/include/x86_64-linux-gnu/bits/inf.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h ../../rcsc/types.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h ../../rcsc/types.h \
  /usr/include/c++/4.6/map /usr/include/c++/4.6/bits/stl_tree.h \
  /usr/include/c++/4.6/bits/stl_map.h \
  /usr/include/c++/4.6/bits/stl_multimap.h /usr/include/c++/4.6/vector \
@@ -101,6 +103,7 @@ object_table.lo: object_table.cpp ../../config.h object_table.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/4.6/bits/algorithmfwd.h \
  /usr/include/c++/4.6/bits/stl_heap.h \
  /usr/include/c++/4.6/bits/stl_tempbuf.h \
@@ -182,6 +185,8 @@ object_table.h:
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h:
 
 /usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/4.6/exception:
 
@@ -269,6 +274,8 @@ object_table.h:
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
 /usr/include/c++/4.6/bits/locale_classes.h:
@@ -343,6 +350,8 @@ object_table.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 ../../rcsc/types.h:
 
 /usr/include/c++/4.6/map:
@@ -404,6 +413,8 @@ object_table.h:
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/c++/4.6/bits/algorithmfwd.h:
 

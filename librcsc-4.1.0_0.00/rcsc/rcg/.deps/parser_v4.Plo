@@ -43,7 +43,8 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include/stddef.h \
- /usr/include/xlocale.h /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/bits/char_traits.h \
  /usr/include/c++/4.6/bits/localefwd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
  /usr/include/c++/4.6/clocale /usr/include/locale.h \
@@ -64,6 +65,7 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
  /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
  /usr/include/c++/4.6/bits/ostream_insert.h \
@@ -85,7 +87,8 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/include/c++/4.6/bits/stl_tempbuf.h \
  /usr/include/c++/4.6/bits/stl_raw_storage_iter.h \
  /usr/include/c++/4.6/backward/auto_ptr.h /usr/include/c++/4.6/cstring \
- /usr/include/string.h /usr/include/boost/shared_ptr.hpp \
+ /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string3.h \
+ /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/select_compiler_config.hpp \
@@ -105,6 +108,7 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/boost/config/posix_features.hpp \
  /usr/include/boost/config/suffix.hpp \
  /usr/include/boost/config/no_tr1/memory.hpp \
@@ -143,6 +147,7 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/include/x86_64-linux-gnu/bits/nan.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/include/c++/4.6/climits \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed/syslimits.h \
@@ -154,7 +159,9 @@ parser_v4.lo: parser_v4.cpp ../../config.h parser_v4.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/4.6/cstdio /usr/include/libio.h \
  /usr/include/_G_config.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
 
 ../../config.h:
 
@@ -280,6 +287,8 @@ parser_v4.h:
 
 /usr/include/xlocale.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/4.6/bits/char_traits.h:
 
 /usr/include/c++/4.6/bits/localefwd.h:
@@ -338,6 +347,8 @@ parser_v4.h:
 
 /usr/include/getopt.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
 
 /usr/include/c++/4.6/bits/locale_classes.h:
@@ -394,6 +405,8 @@ parser_v4.h:
 
 /usr/include/string.h:
 
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
 /usr/include/boost/shared_ptr.hpp:
 
 /usr/include/boost/smart_ptr/shared_ptr.hpp:
@@ -441,6 +454,8 @@ parser_v4.h:
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/config/posix_features.hpp:
 
@@ -536,6 +551,8 @@ types.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
 /usr/include/c++/4.6/climits:
 
 /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed/limits.h:
@@ -563,3 +580,7 @@ types.h:
 /usr/include/_G_config.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
