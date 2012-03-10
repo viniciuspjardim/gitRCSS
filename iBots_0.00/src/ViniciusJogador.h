@@ -57,17 +57,14 @@ public:
     
     /*!
       \brief
-     <b>Caso a ballOfOurSideMemory = true:</b>
-     -Retorna verdadeiro se somente jogadores do nosso time alcançar a bola ou
-     se jogadores de ambos os times alcançarem a bola ou se ninguem
-     alcançar a bola;
+     <b>Caso a bolaNossa = true:</b>
      -Retorna falso se apenas jogadores adversários alcançarem a bola.
+     -Em todos os outros casos retorna verdadeiro.
      
-     <b>Caso a ballOfOurSideMemory = false:</b>
+     <b>Caso a bolaNossa = false:</b>
      -Retorna verdadeiro se somente jogadores do nosso time alcançar a bola;
-     -Retorna falso se somente jogadores do time adversário alcançarem a bola ou
-     se jogadores de ambos os times alcançarem a bola ou se ninguem alcançar a bola
-     */
+     -Em todos os outros casos reorna falso.
+    */
     bool bolaEhNossa() {
         bool nossaAreaChute = mundo.existKickableTeammate();
         bool areaChuteDeles = mundo.existKickableOpponent();
@@ -80,7 +77,19 @@ public:
         }
     }
     
-    // Verificar se funciona para time jogando tanto na direita quanto esquerda
+    /*!
+     \brief
+     Conta o numero de jogadores depois da bola, ou seja, entre a bola e 
+     a trave adversária.
+     \Argumentos
+     jogadores - uma lista contendo os jogadores que se deseja saber se então
+     no centro de jogo.
+     \retorno
+     O numero de jogadores no centro de jogo
+     
+     Foi verificado que é como se sempre o time fosse o da esquerda,
+     ou seja ataca da esquerda para a direita.
+    */
     int numJogadoresCentroJogo(const PlayerCont& jogadores) {
         int num = 0;
         
@@ -96,6 +105,9 @@ public:
         return num;
     }
     
+    /*!
+     \brief retorna true se um dado jogador está no centro de jogo.
+    */
     bool jogadorCentroJogo(const AbstractPlayerObject& jogador) {
         if(jogador.pos().x >= mundo.ball().pos().x) {
             return true;
@@ -125,8 +137,8 @@ public:
         } else {
             escreve << "F|";
         }
-        escreve << aliadosCentroJogo << "-" << oponentesCentroJogo << "|";
-        escreve << mundo.self().stamina() << std::endl;
+        escreve << aliadosCentroJogo << "-"
+                << oponentesCentroJogo << "|" << std::endl;
         
         escreve.close();
     }

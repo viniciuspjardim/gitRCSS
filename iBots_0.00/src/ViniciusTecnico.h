@@ -39,6 +39,7 @@ public:
         logPosseBola();
     }
 
+    /*!\brief retorna true se pelo menos um dos jogadores passados no vetor alcança a bola.*/    
     bool existeJogadorChutavel(const std::vector<const GlobalPlayerObject*>& jogadores) {
         for (std::vector<const GlobalPlayerObject*>::const_iterator
                 it = jogadores.begin(),
@@ -61,27 +62,24 @@ public:
     
     /*!
       \brief
-     <b>Caso a ballOfOurSideMemory = true:</b>
-     -Retorna verdadeiro se somente jogadores do nosso time alcançar a bola ou
-     se jogadores de ambos os times alcançarem a bola ou se ninguem
-     alcançar a bola;
+     <b>Caso a bolaNossa = true:</b>
      -Retorna falso se apenas jogadores adversários alcançarem a bola.
+     -Em todos os outros casos retorna verdadeiro.
      
-     <b>Caso a ballOfOurSideMemory = false:</b>
+     <b>Caso a bolaNossa = false:</b>
      -Retorna verdadeiro se somente jogadores do nosso time alcançar a bola;
-     -Retorna falso se somente jogadores do time adversário alcançarem a bola ou
-     se jogadores de ambos os times alcançarem a bola ou se ninguem alcançar a bola
-     */
+     -Em todos os outros casos reorna falso.
+    */
     bool bolaEhNossa() {
-        bool ourSideKickArea = existeJogadorChutavel(mundo.teammates());
-        bool otherSideKickArea = existeJogadorChutavel(mundo.opponents());
+        bool nossaAreaChute = existeJogadorChutavel(mundo.teammates());
+        bool areaChuteDeles = existeJogadorChutavel(mundo.opponents());
         
          
         if(bolaNossa) {
-            return  !(otherSideKickArea && !ourSideKickArea);
+            return  !(areaChuteDeles && !nossaAreaChute);
         }
         else {
-            return (ourSideKickArea && !otherSideKickArea);
+            return (nossaAreaChute && !areaChuteDeles);
         }
     }
     
