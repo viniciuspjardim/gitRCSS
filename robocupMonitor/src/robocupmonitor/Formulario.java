@@ -17,6 +17,8 @@ public class Formulario extends javax.swing.JFrame {
     private volatile boolean rodando = false;
     // Classe (runnable) que atualiza a interface
     private UpdateGui update = new UpdateGui();
+    // tempo em milisegundos que a interface deve ser atualizada
+    private int tempoAtualizacao;
     
     // Caminhos dos arquivos necessários
     private String urlScript = "";
@@ -32,6 +34,14 @@ public class Formulario extends javax.swing.JFrame {
         } catch (Exception e) {
             terminalTArea.setText("**Erro: argumentos invalidos**");
         }
+        
+        try {
+            tempoAtualizacao = Integer.parseInt(args[3]);
+        } catch (Exception e) {
+            tempoAtualizacao = 500;
+        }
+        terminalTArea.setText("Tempo de atualização da interface: "
+                + tempoAtualizacao + "ms");
     }
 
     /**
@@ -103,7 +113,7 @@ public class Formulario extends javax.swing.JFrame {
 
         time1TArea.setColumns(20);
         time1TArea.setRows(5);
-        time1TArea.setText("Jogador\tEstado");
+        time1TArea.setText("Jogador\t|BNossa?|numCJ|jCJ?|\n");
         jScrollPane2.setViewportView(time1TArea);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -236,7 +246,7 @@ public class Formulario extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     private String lerTime(String urlTime) {
-        StringBuilder strBTime = new StringBuilder("Jogador\tEstado\n");
+        StringBuilder strBTime = new StringBuilder("Jogador\t|BNossa?|numCJ|jCJ?|\n\n");
         LerArquivo leitor = new LerArquivo();
         try {
             // Ler o arquvio do tecnico
@@ -303,7 +313,7 @@ public class Formulario extends javax.swing.JFrame {
                 
                 // Pausa a atualização da interface por 500 milissegundos
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(tempoAtualizacao);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -337,7 +347,7 @@ public class Formulario extends javax.swing.JFrame {
                     p = null;
                 }
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(tempoAtualizacao);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

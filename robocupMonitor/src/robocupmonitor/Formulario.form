@@ -170,7 +170,7 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Jogador&#x9;Estado"/>
+                    <Property name="text" type="java.lang.String" value="Jogador&#x9;|BNossa?|numCJ|jCJ?|&#xa;"/>
                   </Properties>
                 </Component>
               </SubComponents>
