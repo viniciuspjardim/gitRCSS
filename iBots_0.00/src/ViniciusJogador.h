@@ -34,8 +34,6 @@ public:
     /*! Número de oponentes no centro de jogo */
     int oponentesCentroJogo;
     
-    
-    
     ViniciusJogador(const WorldModel& mundoArg):mundo(mundoArg) {
         bolaNossa = false;
         noCentroJogo = false;
@@ -46,7 +44,6 @@ public:
     virtual ~ViniciusJogador() {}
 
     void executar() {
-        mundo.self();
         bolaNossa = bolaEhNossa();
         noCentroJogo = jogadorCentroJogo(mundo.self());
         aliadosCentroJogo = numJogadoresCentroJogo(mundo.teammates());
@@ -124,22 +121,25 @@ public:
         std::ofstream escreve;
         escreve.open(arq, std::ios::trunc);
         
-        escreve << unum << "\t";
+        // Escreve o número do jogador
+        escreve << unum << "\t|";
         // N de bola nossa, D de deles
         if(bolaNossa) {
-            escreve << "N|";
-        } else {
-            escreve << "D|";
-        }
-        // C se o jogador estiver no centro de jogo, F fora
-        if(noCentroJogo) {
-            escreve << "C|";
+            escreve << "V|";
         } else {
             escreve << "F|";
         }
+        // Centro de jogo: numAliados-numOponentes
         escreve << aliadosCentroJogo << "-"
-                << oponentesCentroJogo << "|" << std::endl;
+                << oponentesCentroJogo << "|";
+        // C se o jogador estiver no centro de jogo, F fora
+        if(noCentroJogo) {
+            escreve << "V";
+        } else {
+            escreve << "F";
+        }
         
+        escreve << "|" << std::endl;
         escreve.close();
     }
 };
