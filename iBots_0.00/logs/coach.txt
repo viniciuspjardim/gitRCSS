@@ -1,1 +1,1 @@
-coach	|F|6-10|
+coach	|V|1-5|A|
