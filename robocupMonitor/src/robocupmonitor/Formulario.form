@@ -170,7 +170,7 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Jogador&#x9;|BNossa?|numCJ|jCJ?|&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="Jogador&#x9;|B|a-o|E|&#xa;&#xa;B = nosso time est&#xe1; com a bola? V = est&#xe1;, F = n&#xe3;o est&#xe1;;&#xa;a = n&#xfa;mero aliados no centro de jogo;&#xa;o = n&#xfa;mero oponentes no centro de jogo;&#xa;E = estado do jogo. A ataque, D defesa, CA contra-ataque, CD"/>
                   </Properties>
                 </Component>
               </SubComponents>

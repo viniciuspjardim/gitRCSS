@@ -113,7 +113,7 @@ public class Formulario extends javax.swing.JFrame {
 
         time1TArea.setColumns(20);
         time1TArea.setRows(5);
-        time1TArea.setText("Jogador\t|BNossa?|numCJ|jCJ?|\n");
+        time1TArea.setText("Jogador\t|B|a-o|E|\n\nB = nosso time está com a bola? V = está, F = não está;\na = número aliados no centro de jogo;\no = número oponentes no centro de jogo;\nE = estado do jogo. A ataque, D defesa, CA contra-ataque, CD");
         jScrollPane2.setViewportView(time1TArea);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -246,7 +246,7 @@ public class Formulario extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     private String lerTime(String urlTime) {
-        StringBuilder strBTime = new StringBuilder("Jogador\t|BNossa?|numCJ|jCJ?|\n\n");
+        StringBuilder strBTime = new StringBuilder("Jogador\t|B|a-o|E|\n\n");
         LerArquivo leitor = new LerArquivo();
         try {
             // Ler o arquvio do tecnico
@@ -267,6 +267,7 @@ public class Formulario extends javax.swing.JFrame {
             else if(urlTime.equals(urlTime2))
                 urlTime2 = null;
         }
+        strBTime.append("\nB = nosso time está com a bola? V = está, F = não está;\na = número aliados no centro de jogo;\no = número oponentes no centro de jogo;\nE = estado do jogo. A ataque, D defesa,\nCA contra-ataque, CD contra-defesa.");
         return new String(strBTime);
     }
     
