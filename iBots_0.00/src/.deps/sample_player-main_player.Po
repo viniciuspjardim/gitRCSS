@@ -355,7 +355,10 @@ sample_player-main_player.o: main_player.cpp ../config.h sample_player.h \
  /usr/include/boost/function/detail/maybe_include.hpp \
  /usr/include/boost/function/function_template.hpp \
  /usr/include/boost/detail/no_exceptions_support.hpp ViniciusJogador.h \
- /usr/include/c++/4.6/sstream /usr/include/c++/4.6/bits/sstream.tcc \
+ /usr/local/include/rcsc/action/body_kick_one_step.h \
+ /usr/local/include/rcsc/player/soccer_action.h \
+ bhv_basic_offensive_kick.h /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/bits/sstream.tcc \
  /usr/local/include/rcsc/common/basic_client.h \
  /usr/include/c++/4.6/cerrno /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
@@ -1207,6 +1210,12 @@ communication.h:
 /usr/include/boost/detail/no_exceptions_support.hpp:
 
 ViniciusJogador.h:
+
+/usr/local/include/rcsc/action/body_kick_one_step.h:
+
+/usr/local/include/rcsc/player/soccer_action.h:
+
+bhv_basic_offensive_kick.h:
 
 /usr/include/c++/4.6/sstream:
 

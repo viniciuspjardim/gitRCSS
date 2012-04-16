@@ -356,9 +356,12 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  /usr/include/boost/function/detail/maybe_include.hpp \
  /usr/include/boost/function/function_template.hpp \
  /usr/include/boost/detail/no_exceptions_support.hpp ViniciusJogador.h \
- /usr/include/c++/4.6/sstream /usr/include/c++/4.6/bits/sstream.tcc \
- strategy.h soccer_role.h /usr/local/include/rcsc/factory.h \
- /usr/include/c++/4.6/stack /usr/include/c++/4.6/bits/stl_stack.h \
+ /usr/local/include/rcsc/action/body_kick_one_step.h \
+ /usr/local/include/rcsc/player/soccer_action.h \
+ bhv_basic_offensive_kick.h /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/bits/sstream.tcc strategy.h soccer_role.h \
+ /usr/local/include/rcsc/factory.h /usr/include/c++/4.6/stack \
+ /usr/include/c++/4.6/bits/stl_stack.h \
  /usr/local/include/rcsc/formation/formation.h \
  /usr/local/include/rcsc/formation/sample_data.h \
  ../src/chain_action/field_analyzer.h \
@@ -378,11 +381,11 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  ../src/chain_action/action_generator.h \
  ../src/chain_action/field_evaluator.h sample_field_evaluator.h \
  ../src/chain_action/predict_state.h sample_communication.h \
- keepaway_communication.h bhv_penalty_kick.h \
- /usr/local/include/rcsc/player/soccer_action.h bhv_set_play.h \
+ keepaway_communication.h bhv_penalty_kick.h bhv_set_play.h \
  bhv_set_play_kick_in.h bhv_set_play_indirect_free_kick.h \
  bhv_custom_before_kick_off.h \
- ../src/chain_action/bhv_strict_check_shoot.h view_tactical.h \
+ ../src/chain_action/bhv_strict_check_shoot.h \
+ ../src/chain_action/bhv_pass_kick_find_receiver.h view_tactical.h \
  intention_receive.h /usr/local/include/rcsc/player/soccer_intention.h \
  /usr/include/c++/4.6/queue /usr/include/c++/4.6/bits/stl_queue.h \
  /usr/local/include/rcsc/action/basic_actions.h \
@@ -408,7 +411,6 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  /usr/local/include/rcsc/action/body_intercept.h \
  /usr/local/include/rcsc/action/body_intercept2009.h \
  /usr/local/include/rcsc/player/intercept_table.h \
- /usr/local/include/rcsc/action/body_kick_one_step.h \
  /usr/local/include/rcsc/action/neck_scan_field.h \
  /usr/local/include/rcsc/action/neck_turn_to_ball_or_scan.h \
  /usr/local/include/rcsc/action/view_synch.h \
@@ -442,6 +444,8 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  /usr/include/libintl.h /usr/include/c++/4.6/bits/locale_facets_nonio.tcc \
  /usr/local/include/rcsc/param/cmd_line_parser.h \
  /usr/local/include/rcsc/param/param_parser.h \
+ chain_action/cooperative_action.h \
+ /usr/local/include/rcsc/action/body_smart_kick.h \
  ../src/chain_action/actgen_cross.h \
  ../src/chain_action/actgen_direct_pass.h \
  ../src/chain_action/actgen_self_pass.h \
@@ -449,7 +453,8 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  ../src/chain_action/actgen_short_dribble.h \
  ../src/chain_action/actgen_simple_dribble.h \
  ../src/chain_action/actgen_shoot.h \
- ../src/chain_action/actgen_action_chain_length_filter.h
+ ../src/chain_action/actgen_action_chain_length_filter.h \
+ ../src/chain_action/dribble.h ../src/chain_action/self_pass_generator.h
 
 ../config.h:
 
@@ -1289,6 +1294,12 @@ communication.h:
 
 ViniciusJogador.h:
 
+/usr/local/include/rcsc/action/body_kick_one_step.h:
+
+/usr/local/include/rcsc/player/soccer_action.h:
+
+bhv_basic_offensive_kick.h:
+
 /usr/include/c++/4.6/sstream:
 
 /usr/include/c++/4.6/bits/sstream.tcc:
@@ -1355,8 +1366,6 @@ keepaway_communication.h:
 
 bhv_penalty_kick.h:
 
-/usr/local/include/rcsc/player/soccer_action.h:
-
 bhv_set_play.h:
 
 bhv_set_play_kick_in.h:
@@ -1366,6 +1375,8 @@ bhv_set_play_indirect_free_kick.h:
 bhv_custom_before_kick_off.h:
 
 ../src/chain_action/bhv_strict_check_shoot.h:
+
+../src/chain_action/bhv_pass_kick_find_receiver.h:
 
 view_tactical.h:
 
@@ -1422,8 +1433,6 @@ intention_receive.h:
 /usr/local/include/rcsc/action/body_intercept2009.h:
 
 /usr/local/include/rcsc/player/intercept_table.h:
-
-/usr/local/include/rcsc/action/body_kick_one_step.h:
 
 /usr/local/include/rcsc/action/neck_scan_field.h:
 
@@ -1495,6 +1504,10 @@ intention_receive.h:
 
 /usr/local/include/rcsc/param/param_parser.h:
 
+chain_action/cooperative_action.h:
+
+/usr/local/include/rcsc/action/body_smart_kick.h:
+
 ../src/chain_action/actgen_cross.h:
 
 ../src/chain_action/actgen_direct_pass.h:
@@ -1510,3 +1523,7 @@ intention_receive.h:
 ../src/chain_action/actgen_shoot.h:
 
 ../src/chain_action/actgen_action_chain_length_filter.h:
+
+../src/chain_action/dribble.h:
+
+../src/chain_action/self_pass_generator.h:

@@ -11,6 +11,9 @@
 #define	VINICIUSJOGADOR_H
 
 #include <rcsc/player/world_model.h>
+#include <rcsc/action/body_kick_one_step.h>
+#include <rcsc/player/player_agent.h>
+#include "bhv_basic_offensive_kick.h"
 
 #include <iostream>
 #include <sstream>
@@ -26,10 +29,14 @@ public:
     enum Dist{MUITO_PERTO, PERTO, MEDIA, LONGE};
     enum Estado{ATAQUE, DEFESA, CONTRA_ATAQUE, CONTRA_DEFESA};
     
-    /*! Referencia para a visão de mundo */
+    /*! Referência para a visão de mundo */
     const WorldModel& mundo;
+    /*! Referência para o joador atual*/
+    PlayerAgent& eu;
     /*! true se a bola pertence ao nosso time */
     bool bolaNossa;
+    /*! true se a bola pertence a self*/
+    bool bolaMinha;
     /*! true se o jogador está no centro de jogo */
     bool noCentroJogo;
     /*! Número de aliados no centro de jogo */
@@ -40,8 +47,10 @@ public:
     /*! Estado do jogo*/
     Estado estadoAtual;
     
-    ViniciusJogador(const WorldModel& mundoArg):mundo(mundoArg) {
+    ViniciusJogador(const WorldModel& mundoArg, PlayerAgent& euArg)
+                                :mundo(mundoArg), eu(euArg) {
         bolaNossa = false;
+        bolaMinha = false;
         noCentroJogo = false;
         aliadosCentroJogo = 0;
         oponentesCentroJogo = 0;
@@ -53,6 +62,7 @@ public:
 
     void executar() {
         bolaNossa = bolaEhNossa();
+        bolaMinha = mundo.self().isKickable();
         noCentroJogo = jogadorCentroJogo(mundo.self(), 0.0, 0.0);
         aliadosCentroJogo = numJogadoresCentroJogo(mundo.teammates(), 0.0, 0.0);
         oponentesCentroJogo = numJogadoresCentroJogo(mundo.opponents(), 0.0, 0.0);
@@ -172,7 +182,8 @@ public:
                 ++it)
         {
             Dist d = calcDistancia((*it)->pos(), mundo.ball().pos());
-            if(d == PERTO || d == MUITO_PERTO) {
+            if((d == PERTO || d == MUITO_PERTO) &&
+                    jogadorCentroJogo(*(*it), 0.0, 0.0)) {
                 return true;
             }
         }

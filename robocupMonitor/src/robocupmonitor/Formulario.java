@@ -58,7 +58,7 @@ public class Formulario extends javax.swing.JFrame {
         pararButton = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        scroolTerminal = new javax.swing.JScrollPane();
         terminalTArea = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -90,7 +90,7 @@ public class Formulario extends javax.swing.JFrame {
 
         terminalTArea.setColumns(20);
         terminalTArea.setRows(5);
-        jScrollPane3.setViewportView(terminalTArea);
+        scroolTerminal.setViewportView(terminalTArea);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -98,14 +98,14 @@ public class Formulario extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
+                .addComponent(scroolTerminal, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
+                .addComponent(scroolTerminal, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -236,9 +236,9 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JButton pararButton;
+    private javax.swing.JScrollPane scroolTerminal;
     private javax.swing.JLabel statusLabel;
     private javax.swing.JTextArea terminalTArea;
     private javax.swing.JTextArea time1TArea;
@@ -310,7 +310,7 @@ public class Formulario extends javax.swing.JFrame {
                     time2TArea.setText(lerTime(urlTime2));
                 
                 // Atualiza o terminal
-                terminalTArea.setText(new String(ler.strB));
+                terminalTArea.append(ler.novoConteudo());
                 
                 // Pausa a atualização da interface por 500 milissegundos
                 try {
@@ -318,6 +318,7 @@ public class Formulario extends javax.swing.JFrame {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                terminalTArea.setCaretPosition(terminalTArea.getDocument().getLength());
             }
             statusLabel.setText("Parado");
         }
@@ -329,6 +330,13 @@ public class Formulario extends javax.swing.JFrame {
         
         public LerSaida(Process pArg) {
             p = pArg;
+        }
+        
+        public String novoConteudo() {
+            String str = new String(strB);
+            strB.delete(0, strB.length());
+            
+            return str;
         }
         
         @Override

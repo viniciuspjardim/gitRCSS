@@ -48,6 +48,7 @@
 
 #include "bhv_custom_before_kick_off.h"
 #include "bhv_strict_check_shoot.h"
+#include "bhv_pass_kick_find_receiver.h"
 
 #include "view_tactical.h"
 
@@ -84,6 +85,11 @@
 #include <sstream>
 #include <string>
 #include <cstdlib>
+
+// Vinicius ->
+#include "chain_action/cooperative_action.h"
+#include <rcsc/action/body_smart_kick.h>
+// Vinicius <-
 
 using namespace rcsc;
 
@@ -151,7 +157,7 @@ SamplePlayer::SamplePlayer()
     M_communication = Communication::Ptr( new SampleCommunication() );
     
     // Vinicius ->
-    vinicius = new ViniciusJogador( world() );
+    vinicius = new ViniciusJogador( world(), *this );
     // Vinicius <-
 }
 
@@ -242,9 +248,10 @@ SamplePlayer::actionImpl()
     ActionChainHolder::instance().setFieldEvaluator( M_field_evaluator );
     ActionChainHolder::instance().setActionGenerator( M_action_generator );
     
-    // Vinicius ->
-    vinicius->executar();
+    // Vinicius (updates)->
+    
     // Vinicius <-
+    
 
     //
     // special situations (tackle, objects accuracy, intention...)
@@ -260,6 +267,26 @@ SamplePlayer::actionImpl()
     // update action chain
     //
     ActionChainHolder::instance().update( world() );
+    
+    // Vinicius (executar)->
+    //vinicius->executar();
+    if ( world().gameMode().type() == GameMode::PlayOn && world().self().isKickable()) {
+        
+        //Obs os jogadores estavam caindo pois estava usando a posisão do goleiro
+        // que provavelmente era nula, pois eles ainda não tinham visto o goleiro.
+        if(Body_KickOneStep(Vector2D(-53.17, 4.61),
+                        10).execute( this ))
+        {
+            std::cout << "::ChutouCentro:: " << std::endl;
+            return;
+        }
+        
+    }
+    Body_GoToPoint2010(Vector2D(40, 0),
+            1,
+            100).execute(this);
+    //return;
+    // Vinicius <-
 
 
     //
@@ -280,7 +307,6 @@ SamplePlayer::actionImpl()
         }
     }
 
-
     //
     // override execute if role accept
     //
@@ -289,7 +315,6 @@ SamplePlayer::actionImpl()
         role_ptr->execute( this );
         return;
     }
-
 
     //
     // play_on mode
@@ -781,6 +806,8 @@ SamplePlayer::createFieldEvaluator() const
 #include "actgen_simple_dribble.h"
 #include "actgen_shoot.h"
 #include "actgen_action_chain_length_filter.h"
+#include "dribble.h"
+#include "self_pass_generator.h"
 
 ActionGenerator::ConstPtr
 SamplePlayer::createActionGenerator() const
