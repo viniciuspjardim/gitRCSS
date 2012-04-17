@@ -60,7 +60,7 @@ public:
     
     virtual ~ViniciusJogador() {}
 
-    void executar() {
+    void atualizar() {
         bolaNossa = bolaEhNossa();
         bolaMinha = mundo.self().isKickable();
         noCentroJogo = jogadorCentroJogo(mundo.self(), 0.0, 0.0);
@@ -68,8 +68,13 @@ public:
         oponentesCentroJogo = numJogadoresCentroJogo(mundo.opponents(), 0.0, 0.0);
         
         atualizarEstado();
-        
+    }
+    
+    bool executar() {
+        bool ret;
+        ret = voltarBola();
         fazerLog();
+        return ret;
     }
     
     void atualizarEstado() {
@@ -195,6 +200,39 @@ public:
         if(p1.dist(p2) <= 4.0) return PERTO;
         if(p1.dist(p2) <= 8.0) return MEDIA;
         if(p1.dist(p2) >  8.0) return LONGE;
+    }
+    
+    bool voltarBola() {
+        if (mundo.gameMode().type() == GameMode::PlayOn &&
+                mundo.self().isKickable() && contencao())
+        {
+            //Obs os jogadores estavam caindo pois estava usando a posisão do goleiro
+            // que provavelmente era nula, pois eles ainda não tinham visto o goleiro.
+
+            const PlayerPtrCont& aliados = mundo.teammatesFromBall();
+            
+            for (PlayerPtrCont::const_iterator
+                it = aliados.begin(),
+                    end = aliados.end();
+                    it != end;
+                    ++it)
+            {
+                if((*it)->unum() == mundo.self().unum()) continue;
+
+                if ((*it)->pos().x < mundo.self().pos().x) {
+                    
+                    if (Body_KickOneStep(Vector2D((*it)->pos().x, (*it)->pos().y),
+                            10).execute(&eu))
+                    {
+                        std::cout << "::(" << mundo.self().unum()
+                                << ") Voltou para (" << (*it)->unum() << "):: "
+                                << std::endl;
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     void fazerLog() {

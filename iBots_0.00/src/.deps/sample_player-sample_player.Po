@@ -355,7 +355,8 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  /usr/include/boost/function/detail/function_iterate.hpp \
  /usr/include/boost/function/detail/maybe_include.hpp \
  /usr/include/boost/function/function_template.hpp \
- /usr/include/boost/detail/no_exceptions_support.hpp ViniciusJogador.h \
+ /usr/include/boost/detail/no_exceptions_support.hpp \
+ ataque/ViniciusJogador.h \
  /usr/local/include/rcsc/action/body_kick_one_step.h \
  /usr/local/include/rcsc/player/soccer_action.h \
  bhv_basic_offensive_kick.h /usr/include/c++/4.6/sstream \
@@ -443,9 +444,15 @@ sample_player-sample_player.o: sample_player.cpp ../config.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/4.6/bits/locale_facets_nonio.tcc \
  /usr/local/include/rcsc/param/cmd_line_parser.h \
- /usr/local/include/rcsc/param/param_parser.h \
- chain_action/cooperative_action.h \
+ /usr/local/include/rcsc/param/param_parser.h ataque/PassePara.h \
+ ../src/chain_action/action_chain_graph.h \
+ ../src/chain_action/neck_turn_to_receiver.h \
+ /usr/local/include/rcsc/action/bhv_scan_field.h \
+ /usr/local/include/rcsc/action/body_hold_ball.h \
+ /usr/local/include/rcsc/action/body_hold_ball2008.h \
  /usr/local/include/rcsc/action/body_smart_kick.h \
+ /usr/local/include/rcsc/action/body_stop_ball.h \
+ /usr/local/include/rcsc/action/neck_turn_to_player_or_scan.h \
  ../src/chain_action/actgen_cross.h \
  ../src/chain_action/actgen_direct_pass.h \
  ../src/chain_action/actgen_self_pass.h \
@@ -1292,7 +1299,7 @@ communication.h:
 
 /usr/include/boost/detail/no_exceptions_support.hpp:
 
-ViniciusJogador.h:
+ataque/ViniciusJogador.h:
 
 /usr/local/include/rcsc/action/body_kick_one_step.h:
 
@@ -1504,9 +1511,23 @@ intention_receive.h:
 
 /usr/local/include/rcsc/param/param_parser.h:
 
-chain_action/cooperative_action.h:
+ataque/PassePara.h:
+
+../src/chain_action/action_chain_graph.h:
+
+../src/chain_action/neck_turn_to_receiver.h:
+
+/usr/local/include/rcsc/action/bhv_scan_field.h:
+
+/usr/local/include/rcsc/action/body_hold_ball.h:
+
+/usr/local/include/rcsc/action/body_hold_ball2008.h:
 
 /usr/local/include/rcsc/action/body_smart_kick.h:
+
+/usr/local/include/rcsc/action/body_stop_ball.h:
+
+/usr/local/include/rcsc/action/neck_turn_to_player_or_scan.h:
 
 ../src/chain_action/actgen_cross.h:
 

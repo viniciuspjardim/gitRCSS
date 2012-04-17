@@ -170,7 +170,7 @@ sample_coach-sample_coach.o: sample_coach.cpp ../config.h sample_coach.h \
  /usr/include/boost/scoped_ptr.hpp \
  /usr/include/boost/smart_ptr/scoped_ptr.hpp /usr/include/c++/4.6/set \
  /usr/include/c++/4.6/bits/stl_set.h \
- /usr/include/c++/4.6/bits/stl_multiset.h ViniciusTecnico.h \
+ /usr/include/c++/4.6/bits/stl_multiset.h ataque/ViniciusTecnico.h \
  /usr/local/include/rcsc/common/server_param.h \
  /usr/local/include/rcsc/math_util.h /usr/include/c++/4.6/sstream \
  /usr/include/c++/4.6/bits/sstream.tcc \
@@ -757,7 +757,7 @@ sample_coach.h:
 
 /usr/include/c++/4.6/bits/stl_multiset.h:
 
-ViniciusTecnico.h:
+ataque/ViniciusTecnico.h:
 
 /usr/local/include/rcsc/common/server_param.h:
 

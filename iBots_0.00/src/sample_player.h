@@ -35,7 +35,7 @@
 #include <vector>
 
 // Vinicius ->
-#include "ViniciusJogador.h"
+#include "ataque/ViniciusJogador.h"
 // Vinicius <-
 
 class SamplePlayer

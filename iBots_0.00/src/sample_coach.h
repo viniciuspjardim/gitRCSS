@@ -33,7 +33,7 @@
 #include <vector>
 
 // Vinicius ->
-#include "ViniciusTecnico.h"
+#include "ataque/ViniciusTecnico.h"
 // Vinicius <-
 
 

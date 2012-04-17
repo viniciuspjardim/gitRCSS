@@ -87,8 +87,7 @@
 #include <cstdlib>
 
 // Vinicius ->
-#include "chain_action/cooperative_action.h"
-#include <rcsc/action/body_smart_kick.h>
+#include "ataque/PassePara.h"
 // Vinicius <-
 
 using namespace rcsc;
@@ -269,23 +268,15 @@ SamplePlayer::actionImpl()
     ActionChainHolder::instance().update( world() );
     
     // Vinicius (executar)->
-    //vinicius->executar();
-    if ( world().gameMode().type() == GameMode::PlayOn && world().self().isKickable()) {
-        
-        //Obs os jogadores estavam caindo pois estava usando a posisão do goleiro
-        // que provavelmente era nula, pois eles ainda não tinham visto o goleiro.
-        if(Body_KickOneStep(Vector2D(-53.17, 4.61),
-                        10).execute( this ))
-        {
-            std::cout << "::ChutouCentro:: " << std::endl;
-            return;
-        }
-        
+    vinicius->atualizar();
+    if (vinicius->executar()) {
+        return;
     }
-    Body_GoToPoint2010(Vector2D(40, 0),
-            1,
-            100).execute(this);
-    //return;
+    /*if (world().gameMode().type() == GameMode::PlayOn && world().self().isKickable()) {
+        if (PassePara(1, Vector2D(-50.0, 0.0)).execute(this)) {
+            std::cout << "::PassePara:: " << std::endl;
+        }
+    }*/
     // Vinicius <-
 
 
@@ -808,6 +799,7 @@ SamplePlayer::createFieldEvaluator() const
 #include "actgen_action_chain_length_filter.h"
 #include "dribble.h"
 #include "self_pass_generator.h"
+#include "ataque/PassePara.h"
 
 ActionGenerator::ConstPtr
 SamplePlayer::createActionGenerator() const
